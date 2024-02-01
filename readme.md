@@ -1,8 +1,8 @@
-Translations: [English](readme.md) | [简体中文](readme_zh.md)
+Translations: [English](readme.md) | [简体中文](readme_zh.md) 
 ### Custom Script Rules for API Mocking with mimtproxy
 
-### Usage
-#### Configuration Rules
+## Usage
+### Configuration Rules
 * `rule.json` is a fixed JSON configuration file, as shown below:
 ```json
 [
@@ -43,14 +43,14 @@ This configuration mocks the API at `http://127.0.0.1:1323/proxy-test` and respo
 
 ```
 
-#### Starting mitmproxy
+### Starting mitmproxy
 Note: You need to install mitmproxy first.
 
 ```bash
 mitmdump -p 8888 rule.py
 ```
 
-### Example of Testing HTTP Mocking
+## Example of Testing HTTP Mocking
 Start a test HTTP server with the route `http://127.0.0.1:1323/proxy-test`. Without enabling the proxy, accessing this endpoint will return the following JSON response:
 ``` json
 {"message":"Proxy test success!"}
@@ -67,13 +67,13 @@ Example of starting the server:
 ```bash
 python3 ./test.py --server-start
 ```
-#### Sending a Request without Enabling the Proxy
+### Sending a Request without Enabling the Proxy
 ```
 ❯ python3 ./test.py --client-query                                                                
 {"message":"Proxy test success!"} 
 
 ```
-#### Sending a Request with the Proxy Enabled
+### Sending a Request with the Proxy Enabled
 The response will be the content from `mock_res.json`.
 ```bash
 ❯ python3 ./test.py --client-query --proxy 127.0.0.1:8888                                         
