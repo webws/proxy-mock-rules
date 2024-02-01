@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "header": {
+    "Content-Type": "application/json; charset=UTF-8",
+    "content-res": "res",
+    "test": "dididi"
+  },
+  "content": {
+    "value": "test",
+    "key": "one"
+  }
+}

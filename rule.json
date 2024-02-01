@@ -1,0 +1,14 @@
+[
+  {
+    "url_pattern": "^http://127.0.0.1:1323/proxy-test.*$",
+    "rewrite_rules": {
+      "request_header": "kv_replace",
+      "request_body": "kv_replace",
+      "response_header": "kv_replace",
+      "response_body": "full_rewrite"
+    },
+    "break_rlow": false,
+    "mock_req_json_file": "mock_req.json",
+    "mock_res_json_file": "mock_res.json"
+  }
+]

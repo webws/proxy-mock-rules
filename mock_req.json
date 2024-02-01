@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "header": {
+    "Content-Type": "application/json; charset=UTF-8",
+    "content-req": "req",
+    "req-didididi": "req-dididdi"
+  },
+  "content": {
+    "value": "req_value",
+    "key": "req_key"
+  }
+}
